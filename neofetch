@@ -780,7 +780,7 @@ image_source="auto"
 # Default: 'auto'
 # Values:  'auto', 'distro_name'
 # Flag:    --ascii_distro
-# NOTE: AIX, Hash, Alpine, AlterLinux, Amazon, Anarchy, Android, instantOS,
+# NOTE: AIX, JimniLinux, Hash, Alpine, AlterLinux, Amazon, Anarchy, Android, instantOS,
 #       Antergos, antiX, "AOSC OS", "AOSC OS/Retro", Apricity, ArchCraft,
 #       ArcoLinux, ArchBox, ARCHlabs, ArchStrike, XFerience, ArchMerge, Arch,
 #       Artix, Arya, Bedrock, Bitrig, BlackArch, BLAG, BlankOn, BlueLight,
@@ -5139,7 +5139,7 @@ ASCII:
     --ascii_colors x x x x x x  Colors to print the ascii art
     --ascii_distro distro       Which Distro's ascii art to print
 
-                                NOTE: AIX, Hash, Alpine, AlterLinux, Amazon, Anarchy, Android,
+                                NOTE: AIX, JimniLinux, Hash, Alpine, AlterLinux, Amazon, Anarchy, Android,
                                 instantOS, Antergos, antiX, \"AOSC OS\", \"AOSC OS/Retro\",
                                 Apricity, ArchCraft, ArcoLinux, ArchBox, ARCHlabs, ArchStrike,
                                 XFerience, ArchMerge, Arch, Artix, Arya, Bedrock, Bitrig,
@@ -5765,6 +5765,38 @@ ${c1}         -o          o-
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs
+EOF
+        ;;
+
+"JimniLinux"*)
+            set_colors 1 4 5 
+            read -rd '' ascii_data <<'EOF'
+${c3}                                        
+                          OOOOOOOOO0.           
+                          xxxxxxxkk${c1}O.${c3}           
+                          xxxxxkk${c1}OOO.${c3}           
+  'KK                     xxxk${c1}OOOOOO.${c3}           
+  c00'                    xk${c1}OOOOOOOO.${c3}           
+         ;KKk             ${c2}OO${c1}OOOOOOOO.${c3}           
+        '0000d            ${c2}O${c3}kkkk${c1}OOOOO.${c3}           
+         .kkc             ${c2}OO${c3}kxxxxxkk.           
+                          ${c2}OOO${c3}kxxxxxx.           
+  .KKKKKKx                ${c2}OOOO${c3}kxxxxx.           
+  x0000000;               ${c2}OOOOO${c3}kxxxx.           
+  ;OOOOOOO                ${c2}OOOOOO${c3}kxxx.           
+    ;kkk.                 ${c2}OOOOOOO${c3}kxx.           
+                          ${c2}OOOOOOOO${c3}xx.           
+                          ${c2}OOOOOOOOO${c3}x.           
+                          ${c2}OOOOOOOOO${c3}k.           
+kOOOOOOOl                 ${c2}OOOOOOOOOO${c3}.           
+dOOOOOOOO                ;${c2}OOOOOOOOO${c3}k            
+lxOOOOOOOk.             :${c2}O0000OO${c3}kxxo            
+,xxOOOOOOkxx:         xk${c2}OOO00O${c3}kkxxx'            
+oxxOOOOOkxxxxkOkxxxxxxkOOOOOOOkkkc             
+  oxxkOOOkxkkOOOkxxxxxkkOOOOOOOOO;              
+   .xxkOOOOOOOOOkxxxxxkkOOOOOOOo                
+      xO00OOO000OkkkkkOOOOOOO                   
+         ;OOO000OOOOO000O'
 EOF
         ;;
 
