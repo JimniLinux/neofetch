@@ -5,7 +5,7 @@ pkgver=7.1.0.r0.gb0f98faa
 pkgrel=1
 pkgdesc="A CLI system information tool written in BASH that supports displaying images."
 arch=('any')
-url="https://github.com/JimniLinux/${_pkgname}"
+url="https://github.com/JimniOS/${_pkgname}"
 license=('MIT')
 provides=($_pkgname)
 conflicts=($_pkgname)
@@ -25,7 +25,7 @@ optdepends=(
   'xorg-xwininfo: See https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal'
 )
 makedepends=('git')
-source=("$pkgname::git+https://github.com/JimniLinux/neofetch.git")
+source=("$pkgname::git+https://github.com/JimniOS/neofetch.git")
 md5sums=('SKIP')
 
 pkgver() {
